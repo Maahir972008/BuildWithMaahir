@@ -48,8 +48,6 @@ body {
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     pointer-events: none;
     white-space: nowrap;
-    role: alert;
-    aria-live: polite;
 }
 .custom-toast.show {
     opacity: 1;
@@ -62,7 +60,6 @@ body {
     filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.6));
     animation: toastPop 0.4s ease-out;
     flex-shrink: 0;
-    aria-hidden: true;
 }
 @keyframes toastPop {
     0% { transform: scale(0.5); opacity: 0; }
@@ -162,7 +159,6 @@ body {
 .nav-links a i {
     font-size: 1rem;
     transition: transform 0.3s;
-    aria-hidden: true;
 }
 
 .nav-links a:hover {
@@ -184,7 +180,6 @@ body {
     padding: 0.5rem;
     transition: color 0.3s;
     margin-left: auto;
-    aria-expanded: false;
 }
 .menu-toggle:hover {
     color: var(--gold-light);
@@ -206,7 +201,6 @@ body {
     z-index: 1;
     pointer-events: none;
     opacity: 0.85;
-    aria-hidden: true;
 }
 .hero > * {
     position: relative;
@@ -255,7 +249,6 @@ body {
     font-size: 1.3rem;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     animation: pulse 2s ease-in-out infinite;
-    aria-hidden: true;
 }
 
 .code-badge i {
@@ -297,7 +290,6 @@ body {
 .hero-tag i {
     color: var(--gold-dark);
     font-size: 0.9rem;
-    aria-hidden: true;
 }
 
 .gold-border {
@@ -306,7 +298,6 @@ body {
     background: var(--gold);
     margin: 20px auto;
     border-radius: 2px;
-    aria-hidden: true;
 }
 
 .btn {
@@ -327,7 +318,6 @@ body {
 
 .btn i {
     transition: transform 0.3s;
-    aria-hidden: true;
 }
 
 .btn:hover {
@@ -368,7 +358,6 @@ body {
 .section-title i {
     font-size: 1.8rem;
     color: var(--gold);
-    aria-hidden: true;
 }
 
 /* Skills */
@@ -429,7 +418,6 @@ body {
     font-size: 2.5rem;
     color: var(--gold);
     transition: transform 0.3s;
-    aria-hidden: true;
 }
 
 .skill-card:hover .skill-icon {
@@ -497,7 +485,6 @@ body {
     color: var(--gold);
     opacity: 0.6;
     transition: all 0.3s;
-    aria-hidden: true;
 }
 
 .project-card:hover .project-image i {
@@ -584,7 +571,6 @@ body {
     color: var(--gold);
     margin-bottom: 10px;
     display: block;
-    aria-hidden: true;
 }
 
 .stat-number {
@@ -616,7 +602,6 @@ body {
     color: var(--gold);
     font-size: 1.1rem;
     pointer-events: none;
-    aria-hidden: true;
 }
 
 .input-group input, .input-group textarea {
@@ -700,7 +685,6 @@ body {
     color: var(--gold);
     font-size: 1.3rem;
     transition: all 0.3s;
-    aria-hidden: true;
 }
 
 .social-icons a:hover {
@@ -728,7 +712,6 @@ body {
     background: conic-gradient(var(--gold) 0deg, var(--gold-dark) var(--scroll-angle, 0deg), rgba(212,175,55,0.3) var(--scroll-angle, 0deg));
     border: none;
     transition: all 0.3s;
-    aria-label: "Back to top";
 }
 .back-to-top::after {
     content: '';
@@ -750,7 +733,6 @@ body {
     z-index: 2;
     transition: transform 0.2s;
     text-shadow: 0 0 4px rgba(212,175,55,0.5);
-    aria-hidden: true;
 }
 .back-to-top:hover i {
     transform: translateY(-3px);
@@ -775,14 +757,12 @@ body {
     transition: all 0.3s ease;
     animation: whatsappBounce 2s ease-in-out infinite;
     border: 2px solid rgba(255, 255, 255, 0.3);
-    aria-label: "Chat on WhatsApp";
 }
 
 .whatsapp-float i {
     font-size: 3rem;
     color: white;
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
-    aria-hidden: true;
 }
 
 @keyframes whatsappBounce {
@@ -828,7 +808,6 @@ body {
     background: #25D366;
     opacity: 0;
     animation: whatsappRipple 2s ease-out infinite;
-    aria-hidden: true;
 }
 
 @keyframes whatsappRipple {
