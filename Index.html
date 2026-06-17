@@ -14,50 +14,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="shortcut icon" href="Icon.png" type="image/x-icon">
 
-     <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="Home.css">
 </head>
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <div class="logo">
                 <div class="logo-icon">
-                    <img src="Icon.png" alt="Maahir logo">
+                    <img src="Icon.png" alt="Maahir - Full Stack Developer" title="Maahir Portfolio">
                 </div>
                 <div class="logo-text">BuildWithMAAHIR</div>
             </div>
             <!-- Hamburger button -->
-            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
-                <i class="fas fa-bars"></i>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+                <i class="fas fa-bars" aria-hidden="true"></i>
             </button>
-            <div class="nav-links" id="navLinks">
-                <a href="#home"><i class="fas fa-home"></i><span>Home</span></a>
-                <a href="#skills"><i class="fas fa-palette"></i><span>Skills</span></a>
-                <a href="#projects"><i class="fas fa-layer-group"></i><span>Portfolio</span></a>
-                <a href="#about"><i class="fas fa-user-astronaut"></i><span>About</span></a>
-                <a href="#contact"><i class="fas fa-paper-plane"></i><span>Contact</span></a>
+            <div class="nav-links" id="navLinks" role="menubar">
+                <a href="#home" role="menuitem"><i class="fas fa-home" aria-hidden="true"></i><span>Home</span></a>
+                <a href="#skills" role="menuitem"><i class="fas fa-palette" aria-hidden="true"></i><span>Skills</span></a>
+                <a href="#projects" role="menuitem"><i class="fas fa-layer-group" aria-hidden="true"></i><span>Portfolio</span></a>
+                <a href="#about" role="menuitem"><i class="fas fa-user-astronaut" aria-hidden="true"></i><span>About</span></a>
+                <a href="#contact" role="menuitem"><i class="fas fa-paper-plane" aria-hidden="true"></i><span>Contact</span></a>
             </div>
         </div>
     </nav>
 
     <!-- HERO SECTION with fast non-stop color shifting words + glittering splash -->
-    <section id="home" class="hero">
-        <canvas id="codeCanvas"></canvas>
+    <section id="home" class="hero" aria-labelledby="hero-title">
+        <canvas id="codeCanvas" aria-hidden="true"></canvas>
         <div class="hero-image-container">
             <div class="hero-image">
-                <img src="My_web_img.png" alt="Maahir profile picture">
+                <img src="My_web_img.png" alt="Maahir profile picture - Full stack developer">
             </div>
-            <div class="code-badge">
-                <i class="fas fa-code"></i>
+            <div class="code-badge" aria-label="Code architect badge" aria-hidden="true">
+                <i class="fas fa-code" aria-hidden="true"></i>
             </div>
         </div>
-        <h1>I'm <span class="name">MAAHIR</span></h1>
+        <h1 id="hero-title">I'm <span class="name">MAAHIR</span></h1>
         <div class="hero-tags">
-            <span class="hero-tag"><i class="fas fa-brain"></i> Code Architect</span>
-            <span class="hero-tag"><i class="fas fa-palette"></i> Digital Artist</span>
-            <span class="hero-tag"><i class="fas fa-rocket"></i> Problem Solver</span>
+            <span class="hero-tag"><i class="fas fa-brain" aria-hidden="true"></i> Code Architect</span>
+            <span class="hero-tag"><i class="fas fa-palette" aria-hidden="true"></i> Digital Artist</span>
+            <span class="hero-tag"><i class="fas fa-rocket" aria-hidden="true"></i> Problem Solver</span>
         </div>
-        <div class="gold-border"></div>
+        <div class="gold-border" aria-hidden="true"></div>
         <p class="main-text" style="font-size: 1.3rem; max-width: 1200px; margin: 20px auto; opacity: 0.95; line-height: 1.7;">
             I'm <strong style="color: var(--gold);">Maahir</strong> — a passionate developer who transforms raw ideas into powerful, scalable web applications. 
             With <strong>2+ years of hands‑on experience</strong> in full‑stack development, I specialize in building high‑performance solutions using 
@@ -65,113 +65,113 @@
             ensuring every project is both technically robust and a joy to use. Whether it's an AI‑driven dashboard, a real‑time analytics platform, 
             or a design system used by thousands, I deliver <strong>precision, speed, and elegance</strong>.
         </p>
-        <a href="#contact" class="btn"><i class="fas fa-magic"></i> Let's Create Magic <i class="fas fa-arrow-right"></i></a>
+        <a href="#contact" class="btn" aria-label="Scroll to contact form"><i class="fas fa-magic" aria-hidden="true"></i> Let's Create Magic <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
     </section>
 
     <!-- SKILLS SECTION -->
-    <section id="skills">
+    <section id="skills" aria-labelledby="skills-title">
         <div class="container">
-            <h2 class="section-title">
-                <i class="fas fa-bolt"></i>
+            <h2 class="section-title" id="skills-title">
+                <i class="fas fa-bolt" aria-hidden="true"></i>
                 <span>Technical Arsenal</span>
-                <i class="fas fa-bolt"></i>
+                <i class="fas fa-bolt" aria-hidden="true"></i>
             </h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-js"></i></div>
+                    <div class="skill-icon"><i class="fab fa-js" aria-hidden="true"></i></div>
                     <h3>JavaScript/TypeScript</h3>
                     <p>React, Node.js, Next.js, Express</p>
-                    <div class="skill-progress"><div class="skill-progress-bar" style="width: 90%"></div></div>
+                    <div class="skill-progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="JavaScript/TypeScript proficiency"><div class="skill-progress-bar" style="width: 90%"></div></div>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon"><i class="fab fa-python"></i></div>
+                    <div class="skill-icon"><i class="fab fa-python" aria-hidden="true"></i></div>
                     <h3>Python</h3>
                     <p>Django, FastAPI, Data Science</p>
-                    <div class="skill-progress"><div class="skill-progress-bar" style="width: 85%"></div></div>
+                    <div class="skill-progress" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Python proficiency"><div class="skill-progress-bar" style="width: 85%"></div></div>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-paintbrush"></i></div>
+                    <div class="skill-icon"><i class="fas fa-paintbrush" aria-hidden="true"></i></div>
                     <h3>UI/UX Design</h3>
                     <p>Figma, Tailwind, Framer Motion</p>
-                    <div class="skill-progress"><div class="skill-progress-bar" style="width: 80%"></div></div>
+                    <div class="skill-progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="UI/UX Design proficiency"><div class="skill-progress-bar" style="width: 80%"></div></div>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon"><i class="fas fa-database"></i></div>
+                    <div class="skill-icon"><i class="fas fa-database" aria-hidden="true"></i></div>
                     <h3>Databases</h3>
                     <p>PostgreSQL, MongoDB, Redis</p>
-                    <div class="skill-progress"><div class="skill-progress-bar" style="width: 75%"></div></div>
+                    <div class="skill-progress" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Database proficiency"><div class="skill-progress-bar" style="width: 75%"></div></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- PORTFOLIO SECTION (6 PROJECTS) -->
-    <section id="projects">
+    <section id="projects" aria-labelledby="projects-title">
         <div class="container">
-            <h2 class="section-title">
-                <i class="fas fa-star"></i>
+            <h2 class="section-title" id="projects-title">
+                <i class="fas fa-star" aria-hidden="true"></i>
                 <span>Featured Portfolio</span>
-                <i class="fas fa-star"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
             </h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-image"><i class="fas fa-robot"></i></div>
+                    <div class="project-image"><i class="fas fa-robot" aria-hidden="true"></i></div>
                     <div class="project-info">
-                        <h3><i class="fas fa-microchip"></i> Lumina AI</h3>
+                        <h3><i class="fas fa-microchip" aria-hidden="true"></i> Lumina AI</h3>
                         <p>Enterprise‑grade AI content platform with real‑time collaboration, GPT‑4 integration, and smart SEO suggestions.</p>
                         <div class="project-tech"><span>React</span><span>OpenAI API</span><span>Node.js</span><span>MongoDB</span></div>
-                        <a href="#" class="project-link">Live Demo <i class="fas fa-arrow-right"></i></a>
-                        <a href="#" class="project-link" style="margin-left: 15px;">GitHub <i class="fab fa-github"></i></a>
+                        <a href="#" class="project-link" aria-label="View Lumina AI live demo">Live Demo <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#" class="project-link" aria-label="View Lumina AI GitHub repository" style="margin-left: 15px;">GitHub <i class="fab fa-github" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image"><i class="fas fa-chart-line"></i></div>
+                    <div class="project-image"><i class="fas fa-chart-line" aria-hidden="true"></i></div>
                     <div class="project-info">
-                        <h3><i class="fas fa-chart-simple"></i> Aether Analytics</h3>
+                        <h3><i class="fas fa-chart-simple" aria-hidden="true"></i> Aether Analytics</h3>
                         <p>Real‑time data visualization dashboard with predictive analytics, custom widgets, and exportable reports.</p>
                         <div class="project-tech"><span>D3.js</span><span>Python</span><span>FastAPI</span><span>Redis</span></div>
-                        <a href="#" class="project-link">Live Demo <i class="fas fa-arrow-right"></i></a>
-                        <a href="#" class="project-link" style="margin-left: 15px;">GitHub <i class="fab fa-github"></i></a>
+                        <a href="#" class="project-link" aria-label="View Aether Analytics live demo">Live Demo <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#" class="project-link" aria-label="View Aether Analytics GitHub repository" style="margin-left: 15px;">GitHub <i class="fab fa-github" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image"><i class="fas fa-cubes"></i></div>
+                    <div class="project-image"><i class="fas fa-cubes" aria-hidden="true"></i></div>
                     <div class="project-info">
-                        <h3><i class="fas fa-boxes"></i> Nexus Framework</h3>
+                        <h3><i class="fas fa-boxes" aria-hidden="true"></i> Nexus Framework</h3>
                         <p>Open‑source component library with 50+ accessible, customizable UI components. Used by 1,000+ developers.</p>
                         <div class="project-tech"><span>TypeScript</span><span>Tailwind</span><span>Storybook</span><span>Vitest</span></div>
-                        <a href="#" class="project-link">Documentation <i class="fas fa-arrow-right"></i></a>
-                        <a href="#" class="project-link" style="margin-left: 15px;">GitHub <i class="fab fa-github"></i></a>
+                        <a href="#" class="project-link" aria-label="View Nexus Framework documentation">Documentation <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#" class="project-link" aria-label="View Nexus Framework GitHub repository" style="margin-left: 15px;">GitHub <i class="fab fa-github" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image"><i class="fas fa-store"></i></div>
+                    <div class="project-image"><i class="fas fa-store" aria-hidden="true"></i></div>
                     <div class="project-info">
-                        <h3><i class="fas fa-cart-shopping"></i> Bloom Commerce</h3>
+                        <h3><i class="fas fa-cart-shopping" aria-hidden="true"></i> Bloom Commerce</h3>
                         <p>Full‑stack e‑commerce platform with cart, user auth, payment integration (Stripe), and admin dashboard.</p>
                         <div class="project-tech"><span>Next.js</span><span>Prisma</span><span>PostgreSQL</span><span>Tailwind</span></div>
-                        <a href="#" class="project-link">Live Demo <i class="fas fa-arrow-right"></i></a>
-                        <a href="#" class="project-link" style="margin-left: 15px;">GitHub <i class="fab fa-github"></i></a>
+                        <a href="#" class="project-link" aria-label="View Bloom Commerce live demo">Live Demo <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#" class="project-link" aria-label="View Bloom Commerce GitHub repository" style="margin-left: 15px;">GitHub <i class="fab fa-github" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image"><i class="fas fa-calendar-check"></i></div>
+                    <div class="project-image"><i class="fas fa-calendar-check" aria-hidden="true"></i></div>
                     <div class="project-info">
-                        <h3><i class="fas fa-tasks"></i> FlowSpace</h3>
+                        <h3><i class="fas fa-tasks" aria-hidden="true"></i> FlowSpace</h3>
                         <p>Team productivity suite with kanban boards, real‑time messaging, file sharing, and automated workflows.</p>
                         <div class="project-tech"><span>React</span><span>Socket.io</span><span>Express</span><span>MongoDB</span></div>
-                        <a href="#" class="project-link">Live Demo <i class="fas fa-arrow-right"></i></a>
-                        <a href="#" class="project-link" style="margin-left: 15px;">GitHub <i class="fab fa-github"></i></a>
+                        <a href="#" class="project-link" aria-label="View FlowSpace live demo">Live Demo <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#" class="project-link" aria-label="View FlowSpace GitHub repository" style="margin-left: 15px;">GitHub <i class="fab fa-github" aria-hidden="true"></i></a>
                     </div>
                 </div>
                 <div class="project-card">
-                    <div class="project-image"><i class="fas fa-music"></i></div>
+                    <div class="project-image"><i class="fas fa-music" aria-hidden="true"></i></div>
                     <div class="project-info">
-                        <h3><i class="fas fa-headphones"></i> Sonic Wave</h3>
+                        <h3><i class="fas fa-headphones" aria-hidden="true"></i> Sonic Wave</h3>
                         <p>Music streaming web app with playlists, audio visualization, and recommendation engine.</p>
                         <div class="project-tech"><span>Vue 3</span><span>Pinia</span><span>FastAPI</span><span>Spotify API</span></div>
-                        <a href="#" class="project-link">Live Demo <i class="fas fa-arrow-right"></i></a>
-                        <a href="#" class="project-link" style="margin-left: 15px;">GitHub <i class="fab fa-github"></i></a>
+                        <a href="#" class="project-link" aria-label="View Sonic Wave live demo">Live Demo <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#" class="project-link" aria-label="View Sonic Wave GitHub repository" style="margin-left: 15px;">GitHub <i class="fab fa-github" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
@@ -179,12 +179,12 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section id="about">
+    <section id="about" aria-labelledby="about-title">
         <div class="container">
-            <h2 class="section-title">
-                <i class="fas fa-user-astronaut"></i>
+            <h2 class="section-title" id="about-title">
+                <i class="fas fa-user-astronaut" aria-hidden="true"></i>
                 <span>The Architect</span>
-                <i class="fas fa-user-astronaut"></i>
+                <i class="fas fa-user-astronaut" aria-hidden="true"></i>
             </h2>
             <div class="about-content">
                 <p style="font-size: 1.1rem; line-height: 1.8;">
@@ -192,68 +192,68 @@
                     With a keen eye for detail and a passion for problem-solving, I transform complex ideas into seamless digital experiences.
                 </p>
                 <div class="about-stats">
-                    <div class="stat-item"><i class="fas fa-code-branch"></i><div class="stat-number">50+</div><div>Projects</div></div>
-                    <div class="stat-item"><i class="fas fa-calendar-alt"></i><div class="stat-number">2+</div><div>Years</div></div>
-                    <div class="stat-item"><i class="fas fa-laugh"></i><div class="stat-number">100%</div><div>Happy Clients</div></div>
-                    <div class="stat-item"><i class="fas fa-clock"></i><div class="stat-number">24/7</div><div>Available</div></div>
+                    <div class="stat-item"><i class="fas fa-code-branch" aria-hidden="true"></i><div class="stat-number">50+</div><div>Projects</div></div>
+                    <div class="stat-item"><i class="fas fa-calendar-alt" aria-hidden="true"></i><div class="stat-number">2+</div><div>Years</div></div>
+                    <div class="stat-item"><i class="fas fa-laugh" aria-hidden="true"></i><div class="stat-number">100%</div><div>Happy Clients</div></div>
+                    <div class="stat-item"><i class="fas fa-clock" aria-hidden="true"></i><div class="stat-number">24/7</div><div>Available</div></div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact">
+    <section id="contact" aria-labelledby="contact-title">
         <div class="container">
-            <h2 class="section-title">
-                <i class="fas fa-paper-plane"></i>
+            <h2 class="section-title" id="contact-title">
+                <i class="fas fa-paper-plane" aria-hidden="true"></i>
                 <span>Let's Connect</span>
-                <i class="fas fa-paper-plane"></i>
+                <i class="fas fa-paper-plane" aria-hidden="true"></i>
             </h2>
-            <form class="contact-form" action="https://formspree.io/f/mbdekpra" method="POST">
+            <form class="contact-form" action="https://formspree.io/f/mbdekpra" method="POST" novalidate>
                 <input type="hidden" name="_subject" value="New message from Maahir's Portfolio!">
                 <div class="input-group">
-                    <i class="fas fa-user"></i>
-                    <input type="text" name="name" id="clientName" placeholder="Your name" required>
+                    <i class="fas fa-user" aria-hidden="true"></i>
+                    <input type="text" name="name" id="clientName" placeholder="Your name" required aria-label="Your full name" aria-required="true">
                 </div>
                 <div class="input-group">
-                    <i class="fas fa-envelope"></i>
-                    <input type="email" name="email" placeholder="Your email" required>
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                    <input type="email" name="email" placeholder="Your email" required aria-label="Your email address" aria-required="true">
                 </div>
                 <div class="input-group">
-                    <i class="fas fa-comment"></i>
-                    <textarea name="message" rows="5" placeholder="Tell me about your vision..." required></textarea>
+                    <i class="fas fa-comment" aria-hidden="true"></i>
+                    <textarea name="message" rows="5" placeholder="Tell me about your vision..." required aria-label="Your message" aria-required="true"></textarea>
                 </div>
-                <button type="submit" class="submit-btn">
-                    <i class="fas fa-paper-plane"></i> Send Message <i class="fas fa-arrow-right"></i>
+                <button type="submit" class="submit-btn" aria-label="Send your message">
+                    <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message <i class="fas fa-arrow-right" aria-hidden="true"></i>
                 </button>
             </form>
         </div>
     </section>
 
-    <footer class="footer">
-        <div class="social-icons">
-            <a href="https://github.com/Maahir972008" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://x.com/Abdullahmaahir" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://instagram.com/maahirabdullahsalaudeen" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+    <footer class="footer" role="contentinfo">
+        <div class="social-icons" role="toolbar" aria-label="Social media links">
+            <a href="https://github.com/Maahir972008" target="_blank" rel="noopener noreferrer" aria-label="Visit GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Visit LinkedIn profile"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://x.com/Abdullahmaahir" target="_blank" rel="noopener noreferrer" aria-label="Visit Twitter profile"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+            <a href="https://instagram.com/maahirabdullahsalaudeen" target="_blank" rel="noopener noreferrer" aria-label="Visit Instagram profile"><i class="fab fa-instagram" aria-hidden="true"></i></a>
         </div>
-        <p style="color: #888;">© <span id="currentYear"></span> MAAHIR — Built with <i class="fas fa-gem" style="color: var(--gold);"></i> precision & code</p>
+        <p style="color: #888;">© <span id="currentYear"></span> MAAHIR — Built with <i class="fas fa-gem" style="color: var(--gold);" aria-hidden="true"></i> precision & code</p>
     </footer>
 
-    <a href="https://wa.me/2349061230710" target="_blank" class="whatsapp-float">
-        <i class="fab fa-whatsapp"></i>
-        <span class="whatsapp-tooltip">Chat with Maahir 📱</span>
+    <a href="https://wa.me/2349061230710" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat with Maahir on WhatsApp">
+        <i class="fas fa-whatsapp" aria-hidden="true"></i>
+        <span class="whatsapp-tooltip" aria-hidden="true">Chat with Maahir 📱</span>
     </a>
 
-    <div class="back-to-top" id="backToTop">
-        <i class="fas fa-arrow-up"></i>
-    </div>
+    <button class="back-to-top" id="backToTop" aria-label="Scroll back to top of page" aria-hidden="true">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
 
-    <div id="formToast" class="custom-toast">
-        <i class="fas fa-check-circle"></i>
+    <div id="formToast" class="custom-toast" role="alert" aria-live="polite" aria-atomic="true">
+        <i class="fas fa-check-circle" aria-hidden="true"></i>
         <span id="toastMessage">Thanks! We'll reach out soon.</span>
     </div>
 
-   <script src="Home.js"></script>
+    <script src="Home.js"></script>
 </body>
 </html>
