@@ -188,9 +188,24 @@ body {
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 160px 20px 100px;
+    padding: clamp(120px, 10vw, 160px) 20px 80px;
     position: relative;
     overflow: hidden;
+    min-height: 100vh;
+    background-color: #0a0a1a;
+    background-image: linear-gradient(rgba(5, 3, 36, 0.984), rgba(25, 12, 104, 0.767)), linear-gradient(rgba(10, 12, 28, 0.28), rgba(10, 12, 28, 0.32)), url("Icon.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-blend-mode: normal;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 12, 28, 0.22);
+    z-index: 0;
+    pointer-events: none;
 }
 #codeCanvas {
     position: absolute;
@@ -328,6 +343,62 @@ body {
 
 .btn:hover i {
     transform: translateX(3px);
+}
+
+@media (max-width: 900px) {
+    .hero {
+        padding: clamp(110px, 12vw, 140px) 18px 60px;
+        background-position: top center;
+    }
+
+    .hero h1 {
+        font-size: clamp(2.6rem, 7vw, 3.4rem);
+    }
+
+    .hero .name {
+        font-size: clamp(3.2rem, 10vw, 4rem);
+    }
+}
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 100px 16px 50px;
+    }
+
+    .hero-image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero .name {
+        font-size: 2.8rem;
+    }
+
+    .hero-tags {
+        gap: 10px;
+    }
+
+    .hero-tag {
+        padding: 8px 14px;
+        font-size: 0.85rem;
+    }
+
+    .main-text {
+        font-size: 1rem;
+        max-width: 100%;
+    }
+
+    .btn {
+        padding: 12px 26px;
+    }
+
+    .hero-image-container {
+        margin-bottom: 25px;
+    }
 }
 
 /* Sections */
